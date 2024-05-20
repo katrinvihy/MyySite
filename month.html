@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Month</title>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<style type="text/css">
+		body{
+			color: blacks;
+			font-size: 60px;
+			 
+			background-color:rosybrown ;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let numberOfMonth = prompt("Введіть порядковий номер місяця","");
+
+		while(isNaN(numberOfMonth)){
+		 	numberOfMonth = prompt('Введіть число','');}
+
+		if (numberOfMonth==1 || numberOfMonth==2 || numberOfMonth==12) {
+			document.write("Зимовий місяць");
+		}else if(numberOfMonth==3 || numberOfMonth==4 || numberOfMonth==5){
+			document.write("Весняний місяць");
+		}else if(numberOfMonth==6 || numberOfMonth==7 || numberOfMonth==8){
+			document.write("Літній місяць");
+		}else if(numberOfMonth==9 || numberOfMonth==10 || numberOfMonth==11){
+			document.write("Осінній місяць");
+		}else if(numberOfMonth > 12){
+			document.write("Такого місяця не існує");
+		}else if (numberOfMonth == null) {
+		 	alert('До побачення');
+		}
+	</script>
+
+</body>
+</html>

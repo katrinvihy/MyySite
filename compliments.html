@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/compliments.css">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        let compliments = ['kind', 'beautiful', 'caring', 'nice', 'generous','reliable', 'talkative', 'cute', 'smart', 'clever', 'witty', 'wise', 'friendly'];
+          let animals =['dog', 'mouse','elephant', 'fish','cat', 'monkey', 'girafe', 'bat', 'butterfly', 'pig', 'cow', 'fox', 'tortille', 'bear', 'hippo', 'lion'];
+          let number = prompt('Скільки Ви хочете компліментів?)', '');
+         for(count = 1; count<=number; count++){
+            let rand_com = Math.floor(Math.random()*compliments.length);
+            let rand_ani = Math.floor(Math.random()*animals.length);
+            while(isNaN(number)){
+                let x = prompt('Введіть число', '');}
+
+                if (number == null) {
+                alert('До побачення');
+            } else {
+         document.write(count + ". You are so " + compliments[rand_com] + ' as ' + animals[rand_ani] +  '<br>');}
+         }
+    </script>
+</body>
+</html>

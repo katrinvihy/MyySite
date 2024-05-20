@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>traingle</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body{
+			background-color: burlywood;
+			color: black;
+			font-size: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let a = +prompt("Введіть значення першого катета", '');
+	    let b = +prompt("Введіть значення другого катета", '');
+	    let c = Math.sqrt(a*a+b*b);
+	    let s = (a*b)/2;
+	    let p = a+b+c;
+
+	    if (a<=0||b<=0) {
+	    document.write("Такого трикутника не існує");
+	    }else if(isNaN(a)||isNaN(b)){
+	    	alert('Потрібно вводити числа');
+	    } else{
+	    document.write("Перший катет: "+a+"<br>"+"Другий катет: "+b+"<br>"+"Гіпотенуза: "+c+"<br>"+"Площа: "+s+"<br>"+"Периметр: "+p)
+	    }
+	</script>
+
+</body>
+</html>

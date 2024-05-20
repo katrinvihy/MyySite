@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>atm</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		let money = +prompt("Яку суму хочете зняти? Діапозон суми від 50 до 3000 грн", '');
+		if(money < 50 || money > 3000){
+			alert("На жаль, Ви можете зняти гроші на суму від 50грн до 3000грн");
+		} else if (money%10){
+			alert("Ви можете знімати суму лише кратну 10");
+		} else {
+			alert("Заберіть гроші: " + money);
+		}
+	</script>
+
+</body>
+</html>
